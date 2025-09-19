@@ -3,34 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>함쿠님의 소개 페이지</title>
+    <title>소개 페이지</title>
+    <style>
+        body {
+            background-color: #4a3e36;
+            color: #e3d2a7;
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 모든 내용을 수평 중앙에 정렬합니다. */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px; /* 너무 넓어지지 않도록 최대 너비를 설정합니다. */
+            text-align: center; /* 텍스트를 중앙에 정렬합니다. */
+        }
+
+        header, main, footer {
+            background-color: #5c4e45;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            width: 100%; /* 컨테이너 너비에 맞춥니다. */
+        }
+
+        h1, h2 {
+            color: #ffda6a;
+            border-bottom: 2px solid #ffda6a;
+            padding-bottom: 10px;
+        }
+
+        a {
+            color: #ffda6a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #c9b199;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>함쿠님의 채널에 오신 것을 환영합니다!</h1>
-        <p>함께 소통하고 즐거운 시간을 보내고 싶으시다면, 아래 링크들을 확인해주세요.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Hamku님의 방송에 오신 것을 환영합니다!</h1>
+            <p>Hamku의 방송 관련 정보를 정리해둔 문서입니다.</p>
+            <p>자주 들어오는 질문 등에 대한 답변을 위해 제작되었습니다. 추가 요청 받습니다.</p>
+			<p>글자를 클릭하면 링크와 연결됩니다.</p>
+        </header>
 
-    <main>
-        <h2>채널 및 커뮤니티 링크</h2>
-        <ul>
-            <li><a href="https://www.youtube.com/@hamku39" target="_blank">유튜브 (YouTube)</a></li>
-            <li><a href="https://www.twitch.tv/hamku39" target="_blank">트위치 (Twitch)</a></li>
-            <li><a href="https://chzzk.naver.com/8050613dc4cbb06966edf7361402548f" target="_blank">치지직 (Chzzk)</a></li>
-            <li><a href="https://discord.gg/unyPutBDC8" target="_blank">디스코드 (Discord)</a></li>
-        </ul>
+        <main>
+            <h2>채널 및 커뮤니티 링크</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/@hamku39" target="_blank">유튜브 (YouTube)</a><br><span class="note">원래는 유튜브의 지연시간이 매우 느렸으나, 조금 개선되었습니다.</span></li>
+                <li><a href="https://www.twitch.tv/hamku39" target="_blank">트위치 (Twitch)</a></li>
+                <li><a href="https://chzzk.naver.com/8050613dc4cbb06966edf7361402548f" target="_blank">치지직 (Chzzk)</a></li>
+                <li>
+                    <a href="https://discord.gg/unyPutBDC8" target="_blank">디스코드 (Discord)</a>
+                    <br>
+                    <span class="note">↗게임이나 방송 관련 질문 등 ↖</span>
+                    <br>
+                    <span class="note">접속 안 하고 말없이 잠수타는 경우도 많음 ㅎㅎㅈㅅ</span>
+                </li>
+            </ul>
 
-        <h2>문서 및 스프레드시트</h2>
-        <ul>
-            <li><a href="https://docs.google.com/spreadsheets/d/1wdwrLPNXTo3qphn6nciHcnpr_AbWtQcysNuLiDubizI/edit?usp=sharing" target="_blank">함께하는 구글 스프레드시트</a></li>
-            <li><a href="https://docs.google.com/document/d/1tLykSnzHpmKnF5hWG1486Ma-oJHBuPimmrW2F2KRtGY/edit?usp=sharing" target="_blank">함께하는 구글 문서</a></li>
-        </ul>
-    </main>
+            <h2>함쿠의 게임 및 Q&A 엑셀 파일</h2>
+            <ul>
+                <li><a href="https://docs.google.com/spreadsheets/d/1wdwrLPNXTo3qphn6nciHcnpr_AbWtQcysNuLiDubizI/edit?usp=sharing" target="_blank">진행한 게임 기록 (했어요)</a></li>
+                <li><a href="https://docs.google.com/document/d/1tLykSnzHpmKnF5hWG1486Ma-oJHBuPimmrW2F2KRtGY/edit?usp=sharing" target="_blank">할 예정이 있는 게임 목록 (할래요)</a></li>
+                <li><a href="https://docs.google.com/document/d/1tLykSnzHpmKnF5hWG1486Ma-oJHBuPimmrW2F2KRtGY/edit?usp=sharing" target="_blank">돈좀줘(give me money)</a></li>
+                <li><a href="https://docs.google.com/document/d/1tLykSnzHpmKnF5hWG1486Ma-oJHBuPimmrW2F2KRtGY/edit?usp=sharing" target="_blank">QNA자주 묻는 질문 (답해요)</a></li>
+            </ul>
+        </main>
 
-    <footer>
-        <p>더 많은 소식은 각 플랫폼에서 확인하실 수 있습니다.</p>
-    </footer>
+        <footer>
+            <p>더 많은 소식은 각 플랫폼에서 확인하실 수 있습니다.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
